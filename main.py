@@ -1,7 +1,8 @@
 # A small program for a Band Name Generator
 from time import sleep
+
 print("Hi there!")
-sleep(2)
+sleep(1)    # Adding delays for extra effects
 name = input("What is your name? ")
 sleep(1)
 print(f"Hello {name}, welcome to the Band Name Generator!👋")
@@ -15,9 +16,9 @@ sleep(1)
 print("Hmm")
 sleep(1)
 print("Let me think...")
-sleep(2)
-print("...")
-sleep(2)
-print("...")
-sleep(3)
-print(f"I think, your band name could be {city_name} {pet_name}")
+count = 0
+while count != 5:
+    print(".", end="")
+    sleep(2 / 5)
+    count += 1
+print(f"\nI think, your band name could be {city_name} {pet_name}")
